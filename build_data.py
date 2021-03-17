@@ -11,7 +11,7 @@ def main():
     dataset = Dataset(output_dir=r"D:\stanford\data\FNS summarisation\clean_data_v2",
                       root_dir=r"D:\stanford\data\FNS summarisation\training",
                       clean_deep=False)
-    dataset.clean_dir("training\training_sections")
+    dataset.clean_dir(r"training\training_sections")
     dataset.clean_dir(r"training\training_gold_standards")
     dataset.clean_dir(r"training\training_full_text")
     dataset.select_best_summary(r'training_gold_standards',
